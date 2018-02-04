@@ -16,48 +16,49 @@
         <input id="password" type="text" name="password" value="">
         <br><br>
         <input type="submit" value="Submit">
-    </form> 
+    </form>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            console.log('document ready');
+
+
+            // reads query string parameters
+            var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : sParameterName[1];
+                    }
+                }
+            };
+
+            console.log(getUrlParameter('username'));
+            console.log(getUrlParameter('password'));
+
+            $('#username').val(getUrlParameter('username'));
+            $('#password').val(getUrlParameter('password'));
+
+            // console.log($.urlParam('username'));
+            //console.log($.urlParam('password'));
+
+
+            // Part 2 - make the inputs read only
+            $("#username").prop("readonly", true);
+            $("#password").prop("readonly", true);
+        });
+
+    </script>
 
 
 </body>
-
-<script>
-    $(document).ready(function () {
-        console.log('document ready');
-
-       
-        // reads query string parameters
-        var getUrlParameter = function getUrlParameter(sParam) {
-            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-                sURLVariables = sPageURL.split('&'),
-                sParameterName,
-                i;
-
-            for (i = 0; i < sURLVariables.length; i++) {
-                sParameterName = sURLVariables[i].split('=');
-
-                if (sParameterName[0] === sParam) {
-                    return sParameterName[1] === undefined ? true : sParameterName[1];
-                }
-            }
-        };
-
-        console.log(getUrlParameter('username'));
-        console.log(getUrlParameter('password'));
-
-        $('#username').val(getUrlParameter('username'));
-        $('#password').val(getUrlParameter('password'));
-
-           // console.log($.urlParam('username')); 
-        //console.log($.urlParam('password')); 
-
-
-        // Part 2 - make the inputs read only
-        $("#username").prop("readonly", true);
-        $("#password").prop("readonly", true);
-
-
-    });
-
-    </script>
 </html >
