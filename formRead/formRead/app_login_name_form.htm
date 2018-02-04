@@ -31,7 +31,10 @@
             // define the names of the input text box
             var _uid = $("input[name*='username']")
             var _pwd = $("input[name*='password']")
-            
+
+
+            // TODO implment base64 encoding in the sending form 
+            // and use btoa function to decode
            
             // assing the query string values to the input text boxes
             $(_uid).val(getUrlParameter('username'));
