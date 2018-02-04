@@ -28,15 +28,19 @@
             console.log(getUrlParameter('username'));
             console.log(getUrlParameter('password'));
 
-
+            // define the names of the input text box
+            var _uid = $("input[name*='username']")
+            var _pwd = $("input[name*='password']")
+            
+           
             // assing the query string values to the input text boxes
-            $("input[name*='username']").val(getUrlParameter('username'));
-            $("input[name*='password']").val(getUrlParameter('password'));
+            $(_uid).val(getUrlParameter('username'));
+            $(_pwd).val(getUrlParameter('password'));
 
 
-            // Part 2 - make the inputs read only
-            $("input[name*='username']").prop("readonly", true);
-            $("input[name*='password']").prop("readonly", true);
+            //  make the inputs read only
+            $(_uid).prop('readonly', true);
+            $(_pwd).prop("readonly", true);
         });
 
     </script>

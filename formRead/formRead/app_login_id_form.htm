@@ -25,21 +25,22 @@
     <script>
         $(document).ready(function () {
             console.log('document ready');
-
-            //TODO read the id names of the input text boxes as they may be different between the apps
-
             console.log(getUrlParameter('username'));
             console.log(getUrlParameter('password'));
 
+            // define the names of the input text box
+            var _uid = $('#username');
+            var _pwd = $('#password');
+
 
             // assing the query string values to the input text boxes
-            $('#username').val(getUrlParameter('username'));
-            $('#password').val(getUrlParameter('password'));
+            $(_uid).val(getUrlParameter('username'));
+            $(_pwd).val(getUrlParameter('password'));
 
            
-            // Part 2 - make the inputs read only
-            $("#username").prop("readonly", true);
-            $("#password").prop("readonly", true);
+            //  make the inputs read only
+            $(_uid).prop('readonly', true);
+            $(_pwd).prop("readonly", true);
         });
 
     </script>
