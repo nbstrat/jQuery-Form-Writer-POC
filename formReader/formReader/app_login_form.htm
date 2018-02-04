@@ -47,10 +47,13 @@
         $('#username').val(getUrlParameter('username'));
         $('#password').val(getUrlParameter('password'));
 
-
-
-       // console.log($.urlParam('username')); 
+           // console.log($.urlParam('username')); 
         //console.log($.urlParam('password')); 
+
+
+        // Part 2 - make the inputs read only
+        $("#username").prop("readonly", true);
+        $("#password").prop("readonly", true);
 
 
     });
