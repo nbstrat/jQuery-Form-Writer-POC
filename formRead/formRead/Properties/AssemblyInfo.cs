@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("formReader")]
+[assembly: AssemblyTitle("formRead")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("formReader")]
+[assembly: AssemblyProduct("formRead")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3f0ccfb7-06e7-47aa-a3d4-8120419348b9")]
+[assembly: Guid("0b558835-46e9-4fea-a65a-1bf26ea8ad8e")]
 
 // Version information for an assembly consists of the following four values:
 //

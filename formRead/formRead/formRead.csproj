@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3F0CCFB7-06E7-47AA-A3D4-8120419348B9}</ProjectGuid>
+    <ProjectGuid>{0B558835-46E9-4FEA-A65A-1BF26EA8AD8E}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>formReader</RootNamespace>
-    <AssemblyName>formReader</AssemblyName>
+    <RootNamespace>formRead</RootNamespace>
+    <AssemblyName>formRead</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app_login_form.htm" />
+    <Content Include="postForm.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -93,9 +94,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>56990</DevelopmentServerPort>
+          <DevelopmentServerPort>50098</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:56990/</IISUrl>
+          <IISUrl>http://localhost:50098/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
