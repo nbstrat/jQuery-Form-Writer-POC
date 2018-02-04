@@ -74,6 +74,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app_login_form.htm" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
