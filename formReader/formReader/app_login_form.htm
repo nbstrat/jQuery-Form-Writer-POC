@@ -9,10 +9,10 @@
 
     <form name="form" action="/app_login_form.htm">
         First name:<br>
-        <input id="username" type="text" name="username" value="Mickey">
+        <input id="username" type="text" name="username" value="">
         <br>
         Last name:<br>
-        <input id="password" type="text" name="password" value="Mouse">
+        <input id="password" type="text" name="password" value="">
         <br><br>
         <input type="submit" value="Submit">
     </form> 
@@ -24,11 +24,8 @@
     $(document).ready(function () {
         console.log('document ready');
 
-        // set the input values
-        //$('username').val('Fred');
-        //$('#password').val('FredPassword');
-
-
+       
+        // reads query string parameters
         var getUrlParameter = function getUrlParameter(sParam) {
             var sPageURL = decodeURIComponent(window.location.search.substring(1)),
                 sURLVariables = sPageURL.split('&'),
